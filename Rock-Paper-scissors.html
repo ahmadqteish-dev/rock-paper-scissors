@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="js.js" defer></script>
+
+  <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+  
+  <main class="game">
+   
+    <header>
+   <button id="themeBtn" class="themeBtn">
+  <i class="fa-solid fa-moon"></i>
+  Theme Mode
+</button>
+      <p class="logo">
+        <i class="fa-solid fa-bolt"></i>
+        RPS // ARENA
+      </p>
+
+      <p class="round">
+        Round: <span id="round">0/3</span>
+      </p>
+    </header>
+
+    <section class="players">
+      <div class="score-card player-card">
+        <p>PLAYER</p>
+        <span id="YourScore">00</span>
+      </div>
+
+      <div class="score-card cpu-card">
+        <p>CPU</p>
+        <span id="ComputerScore">00</span>
+      </div>
+
+    </section>
+
+    <section class="battle-box">
+      <div class="choice-side">
+        <div class="circle cyan" id="playerCircle">
+          <span id="player1">?</span>
+        </div>
+        <p>YOU</p>
+      </div>
+
+      <span class="vs">VS</span>
+
+      <div class="choice-side">
+        <div class="circle pink"  id="computerCircle" >
+          <span id="player2">?</span>
+        </div>
+        <p>CPU</p>
+      </div>
+    </section>
+
+    <h2 class="result-text">
+      Result: <span id="result">Choose one</span>
+    </h2>
+
+    <section class="choices">
+      <button class="btn active" data-choice="rock">
+        <i class="fa-solid fa-hand-back-fist"></i>
+        <span>ROCK</span>
+      </button>
+
+      <button class="btn active" data-choice="paper">
+        <i class="fa-solid fa-hand"></i>
+        <span>PAPER</span>
+      </button>
+
+      <button class="btn active" data-choice="scissors">
+        <i class="fa-solid fa-hand-scissors"></i>
+        <span>SCISSORS</span>
+      </button>
+    </section>
+
+    <h2 class="result-text" id="Histo">
+      History: <span id="History"></span>
+    </h2>
+
+    <button id="again">
+      <i class="fa-solid fa-rotate-right"></i>
+      Play Again
+    </button>
+  </main>
+</body>
+</html>
